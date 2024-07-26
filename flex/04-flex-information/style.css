@@ -10,6 +10,9 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
 }
 
 /* do not edit this footer */
@@ -23,4 +26,14 @@ img {
   align-items: center;
   justify-content: center;
   background: #eee;
+}
+
+.flexbox-container{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.fruit{
+  display: flex;
+  flex-direction: column;
 }
