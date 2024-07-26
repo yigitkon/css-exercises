@@ -12,7 +12,18 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+.left-header-container,
+.right-header-container{
+  display: flex;
+  gap: 5px;
+  margin-right: 10px;
+  align-items: center;
+}
+
 
 .profile-image {
   background: rebeccapurple;
@@ -27,8 +38,12 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  margin-left: 10px;
 }
-
+.links{
+  display: flex;
+  gap: 15px;
+}
 button {
   border: none;
   border-radius: 8px;
