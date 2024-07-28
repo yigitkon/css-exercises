@@ -9,7 +9,7 @@ body {
   margin: 0;
   background: #aaa;
   color: #333;
-  /* I'll give you this one for free lol */
+  /* I'll give you this one for free */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,8 +20,6 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
-  display: flex;
-  flex-direction: column;
 }
 
 .icon {
@@ -47,7 +45,7 @@ body {
   width: 24px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   border: 1px solid #eee;
   padding: 0;
 }
@@ -70,22 +68,26 @@ button.cancel {
   color: royalblue;
 }
 
-.top{
+.modal {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 8px;
-}
-.text{
-  margin: 20px;
+  gap: 16px;
+  padding: 16px;
 }
 
-.header{
-  font-weight: 800;
-  font-size: 24px;
+.icon {
+  /* this keeps the icon from getting smashed by the text */
+  flex-shrink: 0;
 }
-.button{
+/* header container should be wrapped around the button element as well in order for flex style to work */
+.header {
   display: flex;
-  margin-left: 50px;
-  gap: 8px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.text {
+  margin-bottom: 16px;
 }
