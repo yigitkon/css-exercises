@@ -46,3 +46,37 @@ html {
   color: white;
   text-align: left;
 }
+
+:root{
+  --rowSize :200px;
+  --colSize: 200px;
+  --bigrowSize : calc(3 * var(--rowSize));
+  --bigcolSize : calc(5 * var(--colSize));
+}
+
+.container{
+  display: grid;
+  grid-template: var(--rowSize) var(--rowSize) var(--bigrowSize) var(--rowSize)/ var(--colSize) var(--bigcolSize) ;
+  gap: 15px;
+}
+.header{
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.sidebar{
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.nav{
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+}
+.footer{
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
